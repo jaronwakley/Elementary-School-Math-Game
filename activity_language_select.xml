@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_language_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jaron.mathfun.LanguageSelect">
+
+
+    <TextView
+        android:id="@+id/language_select_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="2.5"
+        android:shadowRadius="1.5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/language_prompt"
+        android:textSize="35sp"/>
+    <Button
+        android:id="@+id/english_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/blue_button"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/english"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/spanish_button"/>
+    <Button
+        android:id="@+id/spanish_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/blue_button"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/spanish"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/portuguese_button"/>
+    <Button
+        android:id="@+id/portuguese_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/blue_button"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:text="@string/portuguese"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
